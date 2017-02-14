@@ -1,12 +1,15 @@
 XprSwagger
 =======
 
+- Copyright: Xpreso Software Ltd. 2017
 - Author: Pablo Santiago Sanchez
 - License: Apache 2.0
-- Copyright: Xpreso Software Ltd. 2017
 
 Main Features:
 - Plots all the available API (routes) as a Swagger 2.0 description.
+
+TODO:
+- Decide if the object returned by the controller action should be ploted recursively
 
 ## Installation:
 
