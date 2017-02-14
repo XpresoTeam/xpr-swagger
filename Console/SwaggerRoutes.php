@@ -13,14 +13,14 @@ class SwaggerRoutes extends Command
      *
      * @var string
      */
-    protected $signature = 'xcoredev:swagger:routes {swaggerfile?}';
+    protected $signature = 'xpreso:swagger:routes {swaggerfile?}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Xpreso Module Migration Runner';
+    protected $description = 'Xpreso Swagger file generation';
 
     /**
      * Router instance to get all routes

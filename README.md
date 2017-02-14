@@ -1,6 +1,10 @@
 XprSwagger
 =======
 
+- Author: Pablo Santiago Sanchez
+- License: Apache 2.0
+- Copyright: Xpreso Software Ltd. 2017
+
 Main Features:
 - Plots all the available API (routes) as a Swagger 2.0 description.
 
@@ -9,7 +13,7 @@ Main Features:
 ### composer.json
 
     [...]
-    "require" : {
+    "require-dev" : {
         [...]
         "xpreso/xpr-swagger": "dev-master"
     },
@@ -23,3 +27,11 @@ Main Features:
 ### app.php
 
 Add the XprSwagger\XprModuleProvider to it.
+
+## Usage:
+
+Just point to /swagger.yml in your application (ex: http://localhost:8000/swagger.yml). 
+
+ATTENTION! FOR PRODUCTION ENVIRONMENT, DUMP THE SWAGGER FILE TO YOUR PUBLIC FOLDER!
+
+    php artisan xpreso:swagger:routes public/swagger.yml
