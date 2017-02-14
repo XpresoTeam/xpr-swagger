@@ -1,0 +1,11 @@
+{
+  "name": "xpreso/xpr-swagger",
+  "description": "Xpreso Swagger Module for Laravel 5",
+  "license": "Commercial",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "XprSwagger\\": ""
+    }
+  }
+}
