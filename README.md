@@ -6,15 +6,20 @@ XprSwagger
 - License: Apache 2.0
 - Current Stage: POC (Proof Of Concept). Versioning will be kept as 0.0.* until first roadmap is completed.
 
-Main Features:
+### Main Features:
 - Plots all the available API (routes) as a Swagger 2.0 description.
 
-TODOs:
+### Running tests
+- Use same Laravel's phpunit binary for that on the component folder:
+ 
+        ../../phpunit
+
+### TODOs:
 - Recursive plot of definitions
 - Write tests based on the Swagger Pet Store example
 - Add responses 500 based on thrown exceptions by the controller
 
-Use examples for this library:
+### Use examples for this library:
 - Allow the frontend to compare and validate the contract it has with the actual API 
   contract from the backend  
 - Make API testing easier by creating automatic input and checking the supposed output
