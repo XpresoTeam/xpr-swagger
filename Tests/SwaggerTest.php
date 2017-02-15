@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+namespace XprSwagger\Tests;
+
 use App\Http\Controllers\Controller;
 use XprSwagger\Service\Provider\SwaggerGenerator;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
