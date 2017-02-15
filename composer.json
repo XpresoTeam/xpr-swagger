@@ -5,9 +5,13 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "\\": "Tests\/",
-      "\\": "tests\/",
       "XprSwagger\\": ""
     }
-  }
+  },
+  "require-dev": {
+    "phpunit\/phpunit": "~4.0"
+  },
+  "post-install-cmd": [
+    "ln -s ../../bin/phpunit ./"
+  ]
 }
