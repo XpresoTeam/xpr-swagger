@@ -4,7 +4,7 @@ XprSwagger
 - Copyright: Xpreso Software Ltd. 2017
 - Author: Pablo Santiago Sanchez
 - License: Apache 2.0
-- Current Stage: POC (Proof Of Concept). Versioning will be kept as 0.0.* until first roadmap is completed.
+- Current Stage: POC (Proof Of Concept). Versioning will be kept as 0.1.* until first roadmap is completed.
 
 ### Main Features:
 - Plots all the available API (routes) as a Swagger 2.0 description.

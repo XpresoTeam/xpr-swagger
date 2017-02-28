@@ -1,7 +1,7 @@
 {
   "name": "xpreso/xpr-swagger",
   "description": "Xpreso Swagger Module for Laravel 5",
-  "license": "Commercial",
+  "license": "Apache 2.0",
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
