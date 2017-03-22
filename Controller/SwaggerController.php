@@ -20,18 +20,58 @@ namespace XprSwagger\Controller;
 
 use App\Http\Controllers\Controller;
 use XprSwagger\Service\Provider\SwaggerGenerator;
+use Illuminate\Routing\Router;
 
 class SwaggerController extends Controller
 {
     /**
+     * Router instance to get all routes
+     *
+     * @var \Illuminate\Routing\Router
+     */
+    protected static $router;
+
+    /**
+     * Create a new route command instance.
+     *
+     * @param  \Illuminate\Routing\Router  $router
+     * @return void
+     */
+    public function __construct(Router $router)
+    {
+        static::$router = $router;
+    }
+
+    /**
      * Returns the API as a Swagger 2.0 YAML file
      * @return \Illuminate\Contracts\Routing\ResponseFactory|\Symfony\Component\HttpFoundation\Response
      */
-    public function index($data = null)
+    public function index()
     {
         SwaggerGenerator::setRouter(self::$router);
         $yaml = SwaggerGenerator::getSwaggerPaths();
 
         return response($yaml);
+    }
+
+    /**
+     * Get the router instance.
+     *
+     * @return \Illuminate\Routing\Router
+     */
+    public static function getRouter()
+    {
+        return static::$router;
+    }
+
+    /**
+     * Set the router instance.
+     *
+     * @param  \Illuminate\Routing\Router  $router
+     * @return void
+     */
+    public static function setRouter(Router $router)
+    {
+        static::$router = $router;
     }
 }
